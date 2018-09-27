@@ -4,6 +4,9 @@ import App from './App.vue';
 import Message from './Message.vue';
 import Overview from './OverviewScreen';
 import Main from './MainScreen';
+import DraggableCal from 'vue-draggable-cal';
+
+
 
 Vue.use(VueRouter);
 
@@ -22,6 +25,7 @@ const router = new VueRouter({
 Vue.component('app-message', Message);
 Vue.component('overview-screen', Overview);
 Vue.component('main-screen', Main);
+Vue.component('draggable-cal', DraggableCal);
 
 
 new Vue({

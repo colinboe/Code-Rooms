@@ -8,7 +8,7 @@
     <button> {{bookingsbutton1}}</button>
     <button> {{bookingsbutton2}}</button>
     <router-link to="/main">
-        <button id="button" v-on:click="nextScreen=!nextScreen">Book a Room</button>
+        <button id="button">Book a Room</button>
     </router-link>
 
 </div>

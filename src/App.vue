@@ -6,8 +6,6 @@
       </div>
     </header>
 
-    <!-- <overview-screen class="main"></overview-screen>
-    <main-screen class="main"></main-screen> -->
     <router-view></router-view>
 
   </div>
@@ -34,7 +32,6 @@
     text-align: center;
   }
 
-  .bookedRoomsTitle {}
 
   /*Basic positioning*/
   .main {
@@ -83,14 +80,5 @@
     letter-spacing: -0.28px;
   }
 
-  .backButton {
-    position: absolute;
-    left: 30px;
-    top: 30px;
-  }
 
-  .calendar {
-    position: relative;
-    top: 100px;
-  }
 </style>

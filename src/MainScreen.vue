@@ -18,13 +18,41 @@
     </router-link>
 
     <div class="calendar">
-      <h1>Here we need a calendar component</h1>
+      <draggable-cal></draggable-cal>
     </div>
 
-    <div class="slidecontainer">
-      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>
+
+
+
 
   </div>
 
 </template>
+
+
+
+<script>
+
+
+
+</script>
+
+<style>
+
+
+.backButton {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+
+.calendar {
+  position: relative;
+  top: 50px;
+  color: #1D2022;
+
+
+}
+
+</style>

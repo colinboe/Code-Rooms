@@ -24,13 +24,13 @@
     <!-- first Slider -->
     <div class="slider">
       <h2>Minimum duration:</h2>
-      <vue-slider value=0 ref="slider" v-model="value"></vue-slider>
+      <vue-slider v-model="value"></vue-slider>
     </div>
 
     <!--  second slier-->
     <div class="slider">
       <h2>Available timeframe:</h2>
-      <vue-slider value=0 ref="slider" v-model="value"></vue-slider>
+      <vue-slider v-model="value"></vue-slider>
     </div>
 
     <div class="roomsMap">
@@ -74,14 +74,43 @@ export default {
   components: {
     'vue-slider': vueSlider
   },
-  data (){
-    return {
-      value: 0
-
-    }
+  data: () => ({
+           value: [
+      "10-07",
+      "10-14"
+    ],
+    width: "100%",
+    height: 4,
+    dotSize: 14,
+    interval: 3,
+    disabled: false,
+    show: true,
+    tooltip: "always",
+    piecewise: true,
+    data: [
+      "10-01",
+      "10-02",
+      "10-03",
+      "10-04",
+      "10-05",
+      "10-06",
+      "10-07",
+      "10-08",
+      "10-09",
+      "10-10",
+      "10-11",
+      "10-12",
+      "10-13",
+      "10-14",
+      "10-15",
+      "10-16",
+      "10-17",
+      "10-18",
+      "10-19",
+      "10-20"
+    ]
+  })
   }
-}
-
 
 
 

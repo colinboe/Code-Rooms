@@ -15,10 +15,13 @@ export default {
   components: {
     'vue-slider': vueSlider
   },
-  data: () => ({
-           value: 0
-  })
+  data: function () {
+  return {
+    value:0
+    }
+  }
 }
+
 </script>
 
 

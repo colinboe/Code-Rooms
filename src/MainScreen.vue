@@ -18,10 +18,46 @@
     </router-link>
 
     <div class="calendar">
-      <draggable-cal></draggable-cal>
+      <draggable-cal accentColor="#1D2022"	></draggable-cal>
     </div>
 
+    <!-- first Slider -->
+    <div class="slider">
+      <h2>Minimum duration:</h2>
+      <vue-slider value=0 ref="slider" v-model="value"></vue-slider>
+    </div>
 
+    <!--  second slier-->
+    <div class="slider">
+      <h2>Available timeframe:</h2>
+      <vue-slider value=0 ref="slider" v-model="value"></vue-slider>
+    </div>
+
+    <div class="roomsMap">
+
+
+      <svg width="311px" height="217px" viewBox="0 0 311 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="iPhone-8" transform="translate(-32.000000, -428.000000)" stroke="#1E2022" stroke-width="3">
+                <g id="4TH-floor-MAP" transform="translate(34.000000, 429.000000)">
+                    <path d="M3.36196587e-14,122.104651 L-8.8817842e-16,210 C-6.17636919e-16,212.209139 1.790861,214 4,214 L303,214 C305.209139,214 307,212.209139 307,210 L307,4.82386384 C307,2.61472484 305.209139,0.823863838 303,0.823863838 L187.275774,0.823863838 C185.066635,0.823863838 183.275774,2.61472484 183.275774,4.82386384 L183.275774,114.104651 C183.275774,116.31379 181.484913,118.104651 179.275774,118.104651 L4,118.104651 C1.790861,118.104651 2.81511679e-14,119.895512 2.84217094e-14,122.104651 Z" id="outline"></path>
+                    <rect id="Scissors" x="118.5" y="170.5" width="63" height="33" rx="4"></rect>
+                    <rect id="RoomyMcRoomface" x="196.5" y="12.5" width="47" height="45" rx="4"></rect>
+                    <rect id="Morty" x="196.5" y="67.5" width="47" height="20" rx="4"></rect>
+                    <rect id="Rick" x="196.5" y="97.5" width="47" height="20" rx="4"></rect>
+                    <rect id="Spock" x="12.5" y="130.5" width="93" height="29" rx="4"></rect>
+                    <rect id="Rock" x="12.5" y="170.5" width="38" height="33" rx="4"></rect>
+                    <rect id="Paper" x="60.5" y="170.5" width="45" height="33" rx="4"></rect>
+                    <rect id="Lizzard" x="197.5" y="170.5" width="47" height="33" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+      </svg>
+
+    </div>
 
 
 
@@ -33,12 +69,29 @@
 
 <script>
 
+import vueSlider from 'vue-slider-component'
+export default {
+  components: {
+    'vue-slider': vueSlider
+  },
+  data (){
+    return {
+      value: 0
+
+    }
+  }
+}
+
+
 
 
 </script>
 
 <style>
 
+h2{
+  margin-bottom: 30px;
+}
 
 .backButton {
   position: absolute;
@@ -49,10 +102,26 @@
 
 .calendar {
   position: relative;
-  top: 50px;
+  top: 30px;
+  padding: 10px 0 10px 0;
   color: #1D2022;
+}
+
+.slider {
+  position: relative;
+  top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 
 
+}
+
+.roomsMap {
+  margin-top: 30px;
+}
+
+rect {
+  background-color: green;
 }
 
 </style>

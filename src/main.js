@@ -6,8 +6,9 @@ import Overview from './OverviewScreen';
 import Main from './MainScreen';
 //Using calendar component from GitHub: https://github.com/liloow/vue-draggableCal#install
 import DraggableCal from 'vue-draggable-cal';
-// Using slider componant from GitHub:
-// import vueSlider from 'vue-slider-component'
+// Using slider componant from GitHub: https://github.com/NightCatSama/vue-slider-component
+import SingleSlider from './singleSlider.vue';
+import DoubleSlider from './doubleSlider.vue';
 
 
 
@@ -30,6 +31,8 @@ Vue.component('overview-screen', Overview);
 Vue.component('main-screen', Main);
 Vue.component('draggable-cal', DraggableCal);
 // Vue.component('vue-slider', vueSlider);
+Vue.component('single-slider', SingleSlider);
+Vue.component('double-slider', DoubleSlider)
 
 
 new Vue({

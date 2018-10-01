@@ -1,0 +1,28 @@
+
+
+<template>
+  <!-- second slider -->
+  <div>
+    <vue-slider v-model="value"></vue-slider>
+  </div>
+</template>
+
+
+<script>
+
+import vueSlider from 'vue-slider-component'
+export default {
+  components: {
+    'vue-slider': vueSlider
+  },
+  data: () => ({
+           value: 0
+  })
+}
+</script>
+
+
+<style>
+
+
+</style>

@@ -8,15 +8,13 @@
 
 <script>
 
-import vueSlider from 'vue-slider-component'
 export default {
-  components: {
-    'vue-slider': vueSlider
-  },
+
   data: function () {
   return {
-    value:[10,50],
+    value:[10,60],
     }
+
   }
 }
 

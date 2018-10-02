@@ -4,7 +4,7 @@
 
 <div class="main">
 
-    <h3 class="bookedRoomsTitle">Your booked rooms:</h3>
+    <h1 class="bookedRoomsTitle">Your booked rooms:</h1>
     <button> {{bookingsbutton1}}</button>
     <button> {{bookingsbutton2}}</button>
     <router-link to="/main">
@@ -35,6 +35,11 @@ export default {
 
 
 <style>
+
+h1{
+
+  
+}
 
 
 

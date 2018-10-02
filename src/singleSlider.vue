@@ -10,18 +10,16 @@
 
 <script>
 
-import vueSlider from 'vue-slider-component'
+
 export default {
-  components: {
-    'vue-slider': vueSlider
-  },
+  
   data: function () {
   return {
     value:0
     }
+
   }
 }
-
 </script>
 
 

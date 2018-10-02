@@ -15,7 +15,7 @@
 
 <style>
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #1D2022;
   }
 

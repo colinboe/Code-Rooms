@@ -41,7 +41,7 @@
   }
 
   .logo {
-    margin: 15px;
+    margin-top: calc(5% - 13px);
   }
 
   /* "Book a Room" Button: */

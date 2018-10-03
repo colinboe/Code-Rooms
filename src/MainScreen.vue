@@ -23,13 +23,13 @@
 
     <!-- first Slider -->
     <div class="slider">
-      <h2>Minimum duration:</h2>
-      <single-slider></single-slider>
+      <h2>Select the amount of time you need:</h2>
+      <single-slider v-on:getDuration="setDuration($event)"></single-slider>
     </div>
 
     <!--  second slier-->
     <div class="slider">
-      <h2>Available timeframe:</h2>
+      <h2>Select your timewindow:</h2>
       <double-slider></double-slider>
     </div>
 
@@ -46,7 +46,7 @@
                     <path d="M3.36196587e-14,122.104651 L-8.8817842e-16,210 C-6.17636919e-16,212.209139 1.790861,214 4,214 L303,214 C305.209139,214 307,212.209139 307,210 L307,4.82386384 C307,2.61472484 305.209139,0.823863838 303,0.823863838 L187.275774,0.823863838 C185.066635,0.823863838 183.275774,2.61472484 183.275774,4.82386384 L183.275774,114.104651 C183.275774,116.31379 181.484913,118.104651 179.275774,118.104651 L4,118.104651 C1.790861,118.104651 2.81511679e-14,119.895512 2.84217094e-14,122.104651 Z" id="outline"></path>
                     <rect id="Scissors" x="118.5" y="170.5" width="63" height="33" rx="4"></rect>
                     <rect id="RoomyMcRoomface" x="196.5" y="12.5" width="47" height="45" rx="4"></rect>
-                    <rect id="Morty" x="196.5" y="67.5" width="47" height="20" rx="4"></rect>
+                    <rect style="fill: #57D882" id="Morty" x="196.5" y="67.5" width="47" height="20" rx="4"></rect>
                     <rect id="Rick" x="196.5" y="97.5" width="47" height="20" rx="4"></rect>
                     <rect id="Spock" x="12.5" y="130.5" width="93" height="29" rx="4"></rect>
                     <rect id="Rock" x="12.5" y="170.5" width="38" height="33" rx="4"></rect>
@@ -69,6 +69,23 @@
 
 <script>
 
+let duration=''
+
+export default {
+  data: function(){
+    return {
+
+    }
+
+  },
+  methods: {
+    setDuration: function (updatedDuration){
+      duration=updatedDuration
+      console.log('This console log comes from the MainScreen and prints the value of duration-->' + duration)
+    }
+  }
+}
+
 
 
 
@@ -78,6 +95,7 @@
 
 h2{
   margin-bottom: 30px;
+  font-size: 22px;
 }
 
 .backButton {
@@ -102,8 +120,16 @@ h2{
   margin-top: 30px;
 }
 
-rect {
-  background-color: green;
+/* #Lizzard {
+  fill: #57D882;
+
 }
+
+#Spock {
+  fill: #57D882;
+
+} */
+
+
 
 </style>

@@ -12,13 +12,15 @@
 
 <script>
 
+import vueSlider from 'vue-slider-component'
 export default {
-
+  components: {
+    'vue-slider': vueSlider
+  },
   data: function () {
   return {
     value:['8:00','21:00'],
     }
-
   }
 }
 

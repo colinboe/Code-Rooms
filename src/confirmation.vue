@@ -46,7 +46,7 @@ export default {
     return {
       Room: 'Morty',
       Datum:'10.10.18',
-      Time:'14:30'
+      Time:'14:30 - 16:00'
     }
   }
 }

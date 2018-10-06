@@ -129,18 +129,10 @@ h2{
 }
 
 .roomsMap {
-  margin-top: 30px;
+margin-top: 10px;
 }
 
-/* #Lizzard {
-  fill: #57D882;
 
-}
-
-#Spock {
-  fill: #57D882;
-
-} */
 
 
 

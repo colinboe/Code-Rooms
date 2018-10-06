@@ -27,6 +27,9 @@
     left: 0;
     right: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -41,41 +44,10 @@
   }
 
   .logo {
-    margin-top: calc(5% - 13px);
+    /* margin-top: calc(5% - 13px); */
+    margin: auto;
   }
 
-  /* "Book a Room" Button: */
-  #button {
-    position: relative;
-    top: 280px;
-    padding: 20px;
-    background: #1D2022;
-    border: 1px solid #979797;
-    border-radius: 48.5px;
-    width: 75%;
-    /* Book a Room: */
-    font-family: OpenSans-Bold;
-    font-size: 24px;
-    color: #FFFFFF;
-    letter-spacing: -0.28px;
-  }
-
-  /*Bookings Button Main Styling*/
-  .main button {
-    /* Rectangle 4: */
-    position: relative;
-    top: 60px;
-    width: 300px;
-    border: 2px solid #1D2022;
-    border-radius: 9px;
-    padding: 15px;
-    margin: 10px;
-    background-color: white;
-    font-family: OpenSans-Regular;
-    font-size: 15px;
-    color: #1D2022;
-    letter-spacing: -0.28px;
-  }
 
 
 </style>

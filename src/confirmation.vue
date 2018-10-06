@@ -17,7 +17,21 @@
     </svg>
   </router-link>
 
-  <h1>This is the confirmation Screen</h1>
+  <div class="confirmationRectangle">
+
+    <h1>Booking details:</h1>
+    <p class="confirmationParagraph"><b>Location:  </b> {{Room}}</p>
+    <p class="confirmationParagraph"><b>Date:  </b> {{Datum}}</p>
+    <p class="confirmationParagraph"><b>Time:  </b> {{Time}}</p>
+
+  </div>
+
+
+
+  <router-link to="/">
+      <button class="confirmButton">Confirm</button>
+  </router-link>
+
 
 </div>
 
@@ -25,6 +39,17 @@
 
 
 <script>
+
+
+export default {
+  data: function (){
+    return {
+      Room: 'Morty',
+      Datum:'10.10.18',
+      Time:'14:30'
+    }
+  }
+}
 
 
 </script>
@@ -37,6 +62,40 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #1D2022;
 }
+
+
+.confirmationRectangle {
+  /* Rectangle 4: */
+  margin: 40px 40px;
+  padding: 15px;
+  border: 3px solid #1D2022;
+  border-radius: 16px;
+  background-color: white;
+  color: #1D2022;
+}
+
+.confirmationParagraph {
+  font-size: 20px
+}
+
+.confirmButton {
+  position: fixed;
+  bottom: 80px;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  padding: 20px;
+  background: #1D2022;
+  border: 1px solid #979797;
+  border-radius: 48.5px;
+  /* Book a Room: */
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: -0.28px;
+}
+
 
 
 </style>

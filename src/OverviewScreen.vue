@@ -4,8 +4,8 @@
 <div class="main">
 
     <h1 class="bookedRoomsTitle">Your booked rooms:</h1>
-    <button>Room: Rick 15.09.2018 12:00 - 15:00</button>
-    <button>Room: Morty 05.09.2018 12:00 - 15:00</button>
+    <button class="bookingsRectangle">Room: Rick 15.09.2018 12:00 - 15:00</button>
+    <button class="bookingsRectangle">Room: Morty 05.09.2018 12:00 - 15:00</button>
     <router-link to="/main">
         <button id="button">Book a Room</button>
     </router-link>
@@ -39,6 +39,43 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #1D2022;
 }
+
+/* "Book a Room" Button: */
+#button {
+  position: fixed;
+  bottom: 50px;
+  width: 70%;
+  left: 15%;
+  right: 15%;
+  padding: 20px;
+  background: #1D2022;
+  border: 1px solid #979797;
+  border-radius: 48.5px;
+  width: 75%;
+  /* Book a Room: */
+  font-family: OpenSans-Bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  letter-spacing: -0.28px;
+}
+
+/*Bookings Rectangle Main Styling*/
+.bookingsRectangle {
+  /* Rectangle 4: */
+  position: relative;
+  top: 60px;
+  width: 300px;
+  border: 2px solid #1D2022;
+  border-radius: 9px;
+  padding: 15px;
+  margin: 10px;
+  background-color: white;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #1D2022;
+  letter-spacing: -0.28px;
+}
+
 
 
 </style>

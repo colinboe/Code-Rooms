@@ -18,19 +18,21 @@
     </router-link>
 
     <div class="calendar">
+      <h2 class="calendarDescription">Select a date:</h2>
       <draggable-cal accentColor="#1D2022" @dateSelected="saveDate($event)"></draggable-cal>
+    </div>
+
+
+    <!--  second slier-->
+    <div class="slider">
+      <h2>Select your timewindow:</h2>
+      <double-slider></double-slider>
     </div>
 
     <!-- first Slider -->
     <div class="slider">
       <h2>Select the amount of time you need:</h2>
       <single-slider v-on:getDuration="setDuration($event)"></single-slider>
-    </div>
-
-    <!--  second slier-->
-    <div class="slider">
-      <h2>Select your timewindow:</h2>
-      <double-slider></double-slider>
     </div>
 
     <div class="roomsMap">
@@ -104,29 +106,37 @@ export default {
 }
 
 
-
-
-
-
-
 </script>
 
 <style>
 
+draggable-cal {
+  z-index: 0;
+}
+
+.calendarDescription {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+
 h2{
+  margin-top: 5px;
   margin-bottom: 30px;
   font-size: 22px;
 }
 
 .backButton {
-  position: fixed;
+  position: absolute;
+  top: -45px;
   left: 5%;
-  top: calc(5% - 13px);
 }
 
 
 .calendar {
   color: #1D2022;
+  margin-bottom: 20px;
+  z-index: 500;
 }
 
 .slider {
@@ -139,9 +149,6 @@ h2{
 .roomsMap {
 margin-top: 10px;
 }
-
-
-
 
 
 </style>

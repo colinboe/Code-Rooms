@@ -69,7 +69,6 @@ body {
   padding: 15px;
   margin: 10px;
   background-color: white;
-  font-family: OpenSans-Regular;
   font-size: 15px;
   color: #1D2022;
   letter-spacing: -0.28px;

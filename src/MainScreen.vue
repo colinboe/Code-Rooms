@@ -1,4 +1,5 @@
 <!-- Component of the Main Screen (second Screen)  -->
+
 <template>
 
   <div class="main">
@@ -35,8 +36,9 @@
       <single-slider v-on:getDuration="setDuration($event)"></single-slider>
     </div>
 
-    <div class="roomsMap">
+<!-- Interactive SVG MAP  -->
 
+    <div class="roomsMap">
 
       <svg width="311px" height="217px" viewBox="0 0 311 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
@@ -95,11 +97,11 @@ export default {
   methods: {
     setDuration: function (updatedDuration){
       this.duration=updatedDuration
-      console.log('This console log comes from the MainScreen and prints the value of duration-->' + duration)
+      console.log('Value of duration was updated: ' + this.duration)
     },
     saveDate: function(pickedDate){
       date=pickedDate
-      console.log('The picked Date is' + date)
+      console.log('The picked Date is ' + date)
     }
 
   }

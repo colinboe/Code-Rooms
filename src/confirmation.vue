@@ -86,13 +86,13 @@ body {
   right: 15%;
   text-align: center;
   padding: 20px;
-  background: #1D2022;
-  border: 1px solid #979797;
+  background: #57D882;
+  border-color: #57D882;
   border-radius: 48.5px;
   /* Book a Room: */
   font-weight: bold;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #1E2022;
   letter-spacing: -0.28px;
 }
 
